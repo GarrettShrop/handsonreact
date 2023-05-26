@@ -3,12 +3,15 @@ import React from 'react';
 import ProjectsPage from './projects/ProjectsPage';
 import ProjectPage from './projects/ProjectPage';
 import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom';
+import { Provider } from'react-redux';
+import { store } from './state';
 import HomePage from './home/HomePage';
 
 import './App.css';
 
 function App() {
   return (
+    <Provider store={store}>
     <Router>
       <header className="sticky">
         <span className="logo">
@@ -33,6 +36,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+    </Provider>
   );
 }
 
