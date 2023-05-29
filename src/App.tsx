@@ -1,5 +1,4 @@
 import React from 'react';
-//import logo from './logo.svg';
 import ProjectsPage from './projects/ProjectsPage';
 import ProjectPage from './projects/ProjectPage';
 import { BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom';
@@ -25,8 +24,6 @@ function App() {
           Projects
         </NavLink>
       </header>
-
-
 
       <div className="container">
         <Routes>

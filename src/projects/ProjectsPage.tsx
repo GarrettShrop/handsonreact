@@ -12,8 +12,6 @@ import { AppState } from '../state';
 
 
 function ProjectsPage(){
-    //const [projects, setProjects] = useState<Project[]>(MOCK_PROJECTS);
-    
     const loading = useSelector(
             (appState: AppState) => appState.projectState.loading
     );
